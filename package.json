@@ -1,7 +1,4 @@
 {
   "name": "WebBoilerplate",
-  "private": true,
-  "workspaces": [
-    "frontend"
-  ]
+  "private": true
 }

@@ -1,0 +1,10 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vike": "^0.4.232",
+    "vite": "^6.3.5"
+  }
+}
