@@ -5,6 +5,9 @@
   "automergeType": "pr",
   "automergeSchedule": ["at any time"],
   "timezone": "Asia/Tokyo",
+  "lockFileMaintenance": {
+      "enabled": true
+  },
   "packageRules": [
     {
       "matchDatasources": ["github-releases", "github-tags"],
