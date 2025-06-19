@@ -6,6 +6,9 @@ install:
 server:
 	$(PNPM) -C frontend exec vike dev
 
+build:
+	$(PNPM) -C frontend exec vike build
+
 compile:
 	$(PNPM) -C frontend exec tsc --noEmit --strict
 
