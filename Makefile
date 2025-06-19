@@ -3,6 +3,9 @@ PNPM=pnpm
 install:
 	$(PNPM) install
 
+server:
+	$(PNPM) -C frontend exec vike dev
+
 compile:
 	$(PNPM) -C frontend exec tsc --noEmit --strict
 
