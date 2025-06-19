@@ -20,11 +20,6 @@ jobs:
           node-version: 20
           cache: "pnpm"
 
-      - name: Install
-        run: make install
-
-      - name: Lint
-        run: make lint
-
-      - name: Test
-        run: make test
+      - run: make install
+      - run: make lint
+      - run: make compile
