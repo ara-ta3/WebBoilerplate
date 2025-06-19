@@ -10,5 +10,8 @@
     "vike": "^0.4.232",
     "vite": "^6.3.5",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "vike-react": "^0.6.4"
   }
 }
