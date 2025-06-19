@@ -1,0 +1,30 @@
+name: CI Frontend
+
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - run: curl -fsSL https://get.pnpm.io/install.sh | bash -
+      - run: echo "/home/runner/.local/share/pnpm:$PATH" >> $GITHUB_PATH
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Install
+        run: make install
+
+      - name: Lint
+        run: make lint
+
+      - name: Test
+        run: make test
