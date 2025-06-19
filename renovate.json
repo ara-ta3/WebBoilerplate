@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeSchedule": ["at any time"],
+  "timezone": "Asia/Tokyo",
+  "packageRules": [
+    {
+      "matchDatasources": ["github-releases", "github-tags"],
+      "groupName": "github actions",
+      "matchPackageNames": ["/^actions\\//"]
+    },
+    {
+      "matchPackageNames": ["*"],
+      "matchManagers": ["npm"],
+      "groupName": "npm packages"
+    }
+  ]
+}
