@@ -18,7 +18,7 @@ importers:
         version: 19.2.3(react@19.2.3)
       vike-react:
         specifier: ^0.6.4
-        version: 0.6.17(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.249(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1))
+        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1))
     devDependencies:
       '@types/react':
         specifier: ^19.1.8
@@ -40,7 +40,7 @@ importers:
         version: 5.9.3
       vike:
         specifier: ^0.4.232
-        version: 0.4.249(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1)
+        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1)
       vite:
         specifier: ^6.3.5
         version: 6.4.1
@@ -656,11 +656,6 @@ packages:
   '@vitest/utils@3.2.4':
     resolution: {integrity: sha512-fB2V0JFrQSMsCo9HiSq3Ezpdv4iYaXRG1Sx8edX3MwxfyNn83mKiGzOcH+Fkxt4MHxr3y42fQi1oeAInqgX2QA==}
 
-  acorn@8.15.0:
-    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
   assertion-error@2.0.1:
     resolution: {integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==}
     engines: {node: '>=12'}
@@ -926,15 +921,15 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  vike-react@0.6.17:
-    resolution: {integrity: sha512-Ya0xnGjxYSdu8BQxi7mAPztxHgXugkxBqS3EQtQR8exAmxh/1jzLzmvPnb7mPF6RcCU4myInD8nFsjvU1qx6+w==}
+  vike-react@0.6.18:
+    resolution: {integrity: sha512-kMoRGhdP7nSE59iWMQ3SkC9O4ISdHhnxJlwwH03VUFuUpZp2OgLUCPmlgBeIj7TU0z+P2KHhschmojvcZanL4w==}
     peerDependencies:
       react: '>=19'
       react-dom: '>=19'
-      vike: '>=0.4.242'
+      vike: '>=0.4.250'
 
-  vike@0.4.249:
-    resolution: {integrity: sha512-ZQpfmIclLCCLD9dsjTOwoczdjHJ7JrGww4b4vg3FpfrFZcSoNcrEtrwgbSqw9lMuYnkbfXPKFxwOf8VVp9Uftw==}
+  vike@0.4.250:
+    resolution: {integrity: sha512-ZTsVEL3V4JT7hHqRbvjiQotoIGrwWTmh2RIzkbpNtUDhzbrMIVljcFuzLjzAvjpiL86gRL/bHSKS0DSnFPlmqw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -1491,8 +1486,6 @@ snapshots:
       loupe: 3.2.1
       tinyrainbow: 2.0.0
 
-  acorn@8.15.0: {}
-
   assertion-error@2.0.1: {}
 
   baseline-browser-mapping@2.9.11: {}
@@ -1758,21 +1751,22 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  vike-react@0.6.17(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.249(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1)):
+  vike-react@0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1)):
     dependencies:
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
       react-streaming: 0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      vike: 0.4.249(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1)
+      vike: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1)
 
-  vike@0.4.249(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1):
+  vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@6.4.1):
     dependencies:
+      '@babel/core': 7.28.5
+      '@babel/types': 7.28.5
       '@brillout/import': 0.2.6
       '@brillout/json-serializer': 0.5.21
       '@brillout/picocolors': 1.0.30
       '@brillout/require-shim': 0.1.2
       '@brillout/vite-plugin-server-entry': 0.7.15
-      acorn: 8.15.0
       cac: 6.7.14
       es-module-lexer: 1.7.0
       esbuild: 0.27.2
@@ -1786,6 +1780,8 @@ snapshots:
     optionalDependencies:
       react-streaming: 0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       vite: 6.4.1
+    transitivePeerDependencies:
+      - supports-color
 
   vite-node@3.2.4:
     dependencies:
